@@ -11,9 +11,9 @@ import { monthlyData } from '../../data/chart-data';
 
 export default function MonthlyLineChart() {
   return (
-    <div className="h-72">
+    <div className="h-72 w-full">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={monthlyData}>
+        <LineChart data={monthlyData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
           <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
